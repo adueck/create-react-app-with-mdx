@@ -1,3 +1,9 @@
+# create-react-app-with-mdx
+
+This is a simple example of how you can use [mdx-loader](https://www.npmjs.com/package/mdx-loader) with [Create React App](https://github.com/facebook/create-react-app) to include `mdx` files in your projects ***and* enjoy live reloading**.
+
+Instructions for how to do this (along with other methods) can be found [here](https://www.npmjs.com/package/mdx-loader).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
