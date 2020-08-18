@@ -1,24 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+// ThiS eslint-disable line is important...
+/* eslint-disable import/no-webpack-loader-syntax */
+import MdxDoc, { frontMatter } from '!babel-loader!mdx-loader!./mdx-doc.mdx';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>{frontMatter.title}</h2>	  
+      <MdxDoc />
     </div>
   );
 }
